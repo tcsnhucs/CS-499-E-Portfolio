@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhancement 1 - Software Design and Engineering</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .image-gallery {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .image-gallery h3 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      flex: 0 1 280px;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--border);
+    }
+
+    .gallery-item p {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        gap: 1rem;
+      }
+
+      .gallery-item {
+        flex: 0 1 200px;
+      }
+
+      .gallery-item img {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SNHU 499 e-Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project1.html">Enhancement 1</a>
+        <a href="project2.html">Enhancement 2</a>
+        <a href="project3.html">Enhancement 3</a>
+        <a href="code-review.html">Code Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="project-content">
+      <h2>Enhancement 1 - Software Design and Engineering</h2>
+      <h3>About This Artifact</h3>
+      <p>For my first enhancement, I chose to enhance my final project in the CS-360: Mobile Architecture and Programming course at SNHU. I created this project throughout the entire semester in CS-360, during my second to last semester at SNHU. In this course, we were tasked to create a fully functional android application, and were asked to fulfill several different requirements related to one of three different themes. The app theme I chose was to create an application that would allow a user to create and view scheduled events in order to improve productivity for the user. For both the original version of this artifact, and the final version I used Android Studio to create my app, with the code being written in Java.</p>
+
+      <h3>Why This Artifact</h3>
+      <p>For all of these enhancements, we were tasked to choose the most fitting artifact from a previous course at SNHU to showcase our proficiency in a certain topic. This artifact was chosen for the topic of Software Design and Engineering because I felt this was the artifact that stood out the most on its own as a complete product. Most of the artifacts I could choose from were parts of a whole, and couldn't function as their own application without much more work done to them, but the android application I created for CS-360 was a complete android app that stood out on its own as a full product.</p>
+
+      <h3>Enhancements Made</h3>
+      <p>Since the app itself was mostly in a complete state, the majority of my enhancements were to improve the functions of this application and to give new features that were sorely missing. I feel the most important of these new features was the previous lack of any functional notification system, which is almost essential for an app like this. Another one of my most important enhancements was to add a filter/search system, make it so that overdue events automatically get deleted and generally improve the user interface, which all were accomplished.</p>
+
+      <p>In my original plans, I decided to leave the vague prompt "improve user interface" in my plans. I did this because I wanted to allow myself to decide how I should accomplish that further in the planning stage. In the end, I accomplished that by simplifying the screen layout, and removing the home screen where you selected between the calendar screen and events screen, replacing the menu with a header where you can swap between the two without leaving to a main screen. I also redesigned the user interface, so that there was a consistent purple background across the entire app, as the white background before clashed with the theming of the app, and I felt generally made the app look less professional.</p>
+
+      <h3>User Interface Comparison</h3>
+      <p>Below are screenshots showcasing the original UI alongside the improved version.</p>
+
+      <!-- Old UI Gallery -->
+      <div class="image-gallery">
+        <h3>Original UI</h3>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="project1images/old1.png" alt="Original UI - Main Menu">
+            <p>Original UI - Main Menu</p>
+          </div>
+          <div class="gallery-item">
+            <img src="project1images/old2.png" alt="Original UI - Events List">
+            <p>Original UI - Events List</p>
+          </div>
+          <div class="gallery-item">
+            <img src="project1images/old3.png" alt="Original UI - Calander View">
+            <p>Original UI - Calander View</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- New UI Gallery -->
+      <div class="image-gallery">
+        <h3>Enhanced UI</h3>
+        <div></div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="project1images/new1.png" alt="Enhanced UI - Events List">
+            <p>Enhanced UI - Events List</p>
+          </div>
+          <div class="gallery-item">
+            <img src="project1images/new2.png" alt="Enhanced UI - Calander View">
+            <p>Enhanced UI - Calander View</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+            <p>2026 T.J. Comer <a href="https://github.com/tcsnhucs" target="_blank">GitHub Profile</a> <a href="https://github.com/tcsnhucs/CS-499-E-Portfolio" target="_blank">E-Portfolio Repository</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30sp">
+
+
+    <EditText
+        android:id="@+id/title_input_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/event_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@drawable/shape_style_rounded"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description_input_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/event_description"
+        android:inputType="textMultiLine"
+        android:background="@drawable/shape_style_rounded"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_input_update" />
+
+    <LinearLayout
+        android:id="@+id/date_and_time_buttons_update"
+        app:layout_constraintTop_toBottomOf="@id/description_input_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_Date_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:text="@string/date"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_Time_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.5"
+            android:text="@string/time"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_event"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="@id/date_and_time_buttons_update"
+        app:layout_constraintTop_toBottomOf="@+id/date_and_time_buttons_update" />
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/delete"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/date_and_time_buttons_update"
+        app:layout_constraintTop_toTopOf="@+id/update_event" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

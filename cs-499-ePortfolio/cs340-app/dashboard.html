@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAC Shelter Outcomes Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Animal Shelter Outcomes Dashboard</h1>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-group">
+        <label>Filter by Rescue Type:</label>
+        <div class="radio-group">
+          <div class="radio-item">
+            <input type="radio" id="filter-all" name="filterType" value="All" checked>
+            <label for="filter-all">All</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="filter-water" name="filterType" value="Water">
+            <label for="filter-water">Water Rescue</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="filter-mountain" name="filterType" value="Mountain">
+            <label for="filter-mountain">Mountain or Wilderness Rescue</label>
+          </div>
+          <div class="radio-item">
+            <input type="radio" id="filter-disaster" name="filterType" value="Disaster">
+            <label for="filter-disaster">Disaster Rescue or Individual Tracking</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-section">
+      <h3>Animal Data Table</h3>
+      
+      <div class="table-controls">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search animals..."
+          class="search-input"
+        />
+      </div>
+
+      <div class="table-wrapper">
+        <table id="dataTable">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="pagination" id="pagination"></div>
+      <div class="table-info" id="tableInfo"></div>
+    </div>
+
+    <div class="charts-container">
+      <div class="chart-section">
+        <h3>Breed Distribution</h3>
+        <div id="breedChart" style="width: 100%; height: 500px;"></div>
+      </div>
+
+      <div class="map-section">
+        <h3>Location Map</h3>
+        <p class="animal-info">
+          Selected: <strong id="selectedAnimalInfo">No animal selected</strong>
+        </p>
+        <div id="map" class="map-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

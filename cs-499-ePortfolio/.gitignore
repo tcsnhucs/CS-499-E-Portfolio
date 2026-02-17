@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Local development files (optional - only if not using Node server)
+server.js
+.DS_Store
+.env
+.env.local
+
+# IDE extensions
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhancement 3 - Databases</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .image-gallery {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .image-gallery h3 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      flex: 0 1 auto;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--border);
+    }
+
+    .gallery-item p {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        gap: 1rem;
+      }
+
+      .gallery-item img {
+        max-width: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SNHU 499 e-Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project1.html">Enhancement 1</a>
+        <a href="project2.html">Enhancement 2</a>
+        <a href="project3.html">Enhancement 3</a>
+        <a href="code-review.html">Code Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Enhancement 3 - Databases</h2>
+    <h3>About This Artifact</h3>
+      <p>For my third enhancement, I chose to enhance my final project in the CS 340: Advanced Programming Concepts course at SNHU. I created this project throughout the entire semester in CS-340. In this course we were tasked to create a Python program that allows the user to interface with a CSV data file, and view data from the file in a table, see a pie chart for data categorization, and see different data points on a map. For my enhancement of this artifact, I chose to refactor everything into Javascript code.</p>
+      <h3>Why This Artifact</h3>
+      <p>My main goal with this artifact was to showcase my ability to take a program built in one language, and replicate its functions in another language. The python file that the original artifact was based on already launched an html web interface to interact with the data, so this artifact made the most sense to me to showcase that ability, as I refactored the artifact into Javascript, a language focused on developing web apps. Beyond that, since the entire point of this artifact is to view a large database in a web view, it seemed like the obvious choice to pick for the category of databases.</p>
+      <h3>Enhancements Made</h3>
+      <p>I focused on keeping functions relatively the same between the refactored code and the original code. Because my goal with this artifact was to showcase my ability to refactor code from one programming language to another, I didn't want to make the new version significantly different from the original, so there isn’t much functionally different between the two versions of the artifact. However, the pie chart in the original had a glaring flaw, where there were hundreds of unique entries with 1 or 2 items that had that entry name visible on the pie chart. This made the pie chart practically unusable and so I fixed this by making a cut off point at 0.75% where every breed with less percentage occurrence than that shows up in a single “other” category. Besides that, I also added stylized CSS to the page which makes it much more user friendly and modern looking. The original artifact exclusively used HTML to display it's output, meaning my artifact appears much more modern and user-friendly.</p>
+
+      <h3>User Interface</h3>
+      <p>Below shows a screenshot of what the artifact looked like before I made any enhancements..</p>
+      
+      <!-- UI Gallery -->
+      <div class="image-gallery">
+        <h3>Original User Interface</h3>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="project3images/olddashboard.png" alt="Original User Interface">
+            <p>Original User Interface</p>
+          </div>
+        </div>
+      </div>
+     <div class="cs340-app-section">
+      <h3>Live Application</h3>
+      <p>Click the button below to open the enhanced artifact as a web page:</p>
+      <a href="cs340-app/dashboard.html" target="_blank" class="btn-primary">Open Dashboard</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+            <p>2026 T.J. Comer <a href="https://github.com/tcsnhucs" target="_blank">GitHub Profile</a> <a href="https://github.com/tcsnhucs/CS-499-E-Portfolio" target="_blank">E-Portfolio Repository</a></p>
+    </div>
+  </footer>
+</body>
+</html>

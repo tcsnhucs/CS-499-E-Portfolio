@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhancement 2 - Algorithms and Data Structures</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .image-gallery {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .image-gallery h3 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      flex: 0 1 auto;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--border);
+    }
+
+    .gallery-item p {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        gap: 1rem;
+      }
+
+      .gallery-item img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SNHU 499 e-Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="project1.html">Enhancement 1</a>
+        <a href="project2.html">Enhancement 2</a>
+        <a href="project3.html">Enhancement 3</a>
+        <a href="code-review.html">Code Review</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="project-content">
+      <h2>Enhancement 2 - Algorithms and Data Structures</h2>
+      <h3>About This Artifact</h3>
+      <p>For my second enhancement, I chose to enhance my final project in the CS 320: Software Testing, Automation, and Quality Assurance course at SNHU. I created this project throughout the entire semester in CS-320. In this course, we were tasked to create several java functions that allow for the interfacing with an arraylist to store information about contacts, tasks, and appointments.</p>
+
+      <h3>Why This Artifact</h3>
+      <p>As far as the possible artifacts I was able to choose from went, the final project from CS-320 was the artifact that had the most room for building something new. The original final program from CS-320 was a very small java program that had no user interface. I chose this for the "Algorithms and Data Structure" category, because this was the artifact that directly dealt with storing data through specific structures the most out of the valid artifacts I could choose from.</p>
+
+      <h3>Enhancements Made</h3>
+      <p>The original program had functions to allow the user to add new entries to three different lists: the contacts, tasks, and appointment lists. Each entry had to have multiple fields correctly entered. For instance, with the contacts list, the user had to correctly enter a valid first name, last name, phone number, and address. If anything was detected to be invalid, the functions wouldn't let the user create the new entry. The original project never had us create any means to interact with the functions in the program, and the original goal was just to test using JUnit tests that the functions worked correctly.</p>
+
+      <p>Because of the lack of any means for a user to interract with the functions, I instantly knew how I could modify the artifact to enhance the program. I created a fully functional user interface to interact with the functions, to allow the user to create and modify the entries in the lists. I created an executable Java program using JavaFX for the user interface. The program allows the user to add, remove, and modify entries in the three lists, and save those modifications to a file, and load a file of an existing list to modify.</p>
+
+      <h3>User Interface</h3>
+      <p>Below are screenshots of the user interface I created for the enhanced application.</p>
+
+      <!-- UI Gallery -->
+      <div class="image-gallery">
+        <h3>JavaFX Application Interface</h3>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="project2images/mainscreen.png" alt="Main Screen">
+            <p>Main Screen</p>
+          </div>
+          <div class="gallery-item">
+            <img src="project2images/addcontact.png" alt="Add Contact Screen">
+            <p>Add Contact Interface</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+            <p>2026 T.J. Comer <a href="https://github.com/tcsnhucs" target="_blank">GitHub Profile</a> <a href="https://github.com/tcsnhucs/CS-499-E-Portfolio" target="_blank">E-Portfolio Repository</a></p>
+    </div>
+  </footer>
+</body>
+</html>
