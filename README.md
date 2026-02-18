@@ -1,4 +1,4 @@
-# SNHU 499 — e-Portfolio
+# SNHU 499 e-Portfolio
 
 A professional portfolio website showcasing three software engineering enhancement projects for the Computer Science capstone (CS-499) course at Southern New Hampshire University.
 
